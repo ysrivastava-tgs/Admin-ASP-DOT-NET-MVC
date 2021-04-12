@@ -24,9 +24,9 @@ namespace DataLayer.Migrations
                 columns: table => new
                 {
                     ID = table.Column<string>(nullable: false),
-                    FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
-                    Grade = table.Column<int>(nullable: false)
+                    Name = table.Column<string>(nullable: true),
+                    OOPS_001 = table.Column<int>(nullable: false),
+                    DS_002 = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

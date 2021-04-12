@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DataLayer;
 using Models;
-using AppContext = DataLayer.AppContext;
 
 namespace AdminWebApp.Controllers
 {

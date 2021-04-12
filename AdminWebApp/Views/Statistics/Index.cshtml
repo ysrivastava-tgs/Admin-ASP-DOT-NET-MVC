@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Full Data Statistics</h1>
+<div>Total Students In School : @Context.Request.Cookies["studentCount"]</div>
+<div>Total Subjects In School @Context.Request.Cookies["subjectCount"]</div>
+<div>Max Score In OOPS Scored @Context.Request.Cookies["max_oops"]</div>
+<div>Min Score In OOPS Scored @Context.Request.Cookies["min_oops"]</div>
+<div>Max Score In Data Structure Scored @Context.Request.Cookies["max_ds"]</div>
+<div>Min Score In Data Structure Scored @Context.Request.Cookies["min_ds"]</div>
+<div>Avg Score In OOPS Scored @Context.Request.Cookies["avg_oops"]</div>
+<div>Avg Score In Data Structure Scored @Context.Request.Cookies["avg_ds"]</div>
+<div>Student With Highest Marks In OOPS <br /> @Context.Request.Cookies["stud_max_oops"]</div>
+<div>Student With Lowest Marks In OOPS<br /> @Context.Request.Cookies["stud_min_oops"]</div>
+<div>Student With Highest Marks In Data Structure<br /> @Context.Request.Cookies["stud_max_ds"]</div>
+<div>Student With Lowest Marks In Data Structure <br />@Context.Request.Cookies["stud_min_ds"]</div>
+

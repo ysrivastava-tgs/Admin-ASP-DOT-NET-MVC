@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataLayer.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210408052905_change_in_subj_model")]
-    partial class change_in_subj_model
+    [Migration("20210412061751_initial-migration")]
+    partial class initialmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,14 +41,14 @@ namespace DataLayer.Migrations
                     b.Property<string>("ID")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Grade")
+                    b.Property<int>("DS_002")
                         .HasColumnType("int");
 
-                    b.Property<string>("LastName")
+                    b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OOPS_001")
+                        .HasColumnType("int");
 
                     b.HasKey("ID");
 
@@ -59,9 +59,6 @@ namespace DataLayer.Migrations
                 {
                     b.Property<string>("ID")
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("SubjCode")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SubjName")
                         .HasColumnType("nvarchar(max)");

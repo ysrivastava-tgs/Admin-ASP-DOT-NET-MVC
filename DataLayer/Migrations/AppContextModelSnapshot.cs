@@ -39,14 +39,14 @@ namespace DataLayer.Migrations
                     b.Property<string>("ID")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Grade")
+                    b.Property<int>("DS_002")
                         .HasColumnType("int");
 
-                    b.Property<string>("LastName")
+                    b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OOPS_001")
+                        .HasColumnType("int");
 
                     b.HasKey("ID");
 
@@ -57,9 +57,6 @@ namespace DataLayer.Migrations
                 {
                     b.Property<string>("ID")
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("SubjCode")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SubjName")
                         .HasColumnType("nvarchar(max)");

@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/School-DB-Web-Form/Scripts
+/School-DB-Web-Form/fonts
